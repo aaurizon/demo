@@ -28,28 +28,28 @@ env:
   GH_TOKEN: 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
 jobs:
   ovh_endpoint:
-    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml
+    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml@v1
     with:
       secret_name : ovh_endpoint
       secret_value: ${{ github.event.inputs.ovh_endpoint }}
     secrets:
       TOKEN: ${{ env.GH_TOKEN }}
   ovh_application_key:
-    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml
+    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml@v1
     with:
       secret_name : ovh_application_key
       secret_value: ${{ github.event.inputs.ovh_application_key }}
     secrets:
       TOKEN: ${{ env.GH_TOKEN }}
   ovh_application_secret:
-    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml
+    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml@v1
     with:
       secret_name : ovh_application_secret
       secret_value: ${{ github.event.inputs.ovh_application_secret }}
     secrets:
       TOKEN: ${{ env.GH_TOKEN }}
   ovh_consumer_key:
-    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml
+    uses: aaurizon/action/.github/workflows/gh-set-secret.yaml@v1
     with:
       secret_name : ovh_consumer_key
       secret_value: ${{ github.event.inputs.ovh_consumer_key }}
